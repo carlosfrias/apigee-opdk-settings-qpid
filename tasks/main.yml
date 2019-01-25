@@ -1,0 +1,9 @@
+---
+# tasks file for apigee-opdk-settings-qpid
+- name: Update cache with Qpid ports
+  set_fact:
+    cacheable: yes
+    qpid_jmx_port: 1102
+    qpid_int_mgmt_port: 4529
+    qpid_messaging_port: 5672
+    qpid_ext_mgmt_port: 8083
